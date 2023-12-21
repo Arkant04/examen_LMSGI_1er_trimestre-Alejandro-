@@ -2,22 +2,44 @@
 
 1º de DAM en ESCAV Granada
 
-Nombre:
+Nombre: Alejandro De La Corte Grosso
 
-Fecha:
+Fecha: 21/12/2023
 
-## Inicio
+En primer lugar, he creado un HTML, JS y CSS
 
-Para empezar, crea un fork de este repositorio, clónalo en tu ordenador y abre el proyecto con VSCode.
+En el HTML que he creado donde he divido este en tres secciones:
 
-Edita este fichero README.md con tu nombre y la fecha de hoy, una vez hagas un commit inicial, estas listo para empezar!
+ -En la primera seccion he puesto un texto el cual lo he centrado en css  y ha parte le he puesto un fondo de pantalla para que no sea el mismo que el fondo de la ultima seccion
 
-El examen está dividido en 3 partes, cada una de ellas en una carpeta diferente:
+ -En la segunda seccion he puesto un texto que sirve como titulo ha la imagen de abajo que es un gato moviendo la cabeza y abajo de esta encontramos un subtitulo. Ademas a esta seccion tambien le he añadido un fondo de pantalla
 
-- `00_teoria`: Varias preguntas de teoría.
-- `01_practica`: Ejercicio con html+js.
-- `02_docs`: Documentación del ejercicio realizado.
+ -En la ultima seccion he añadido un texto que va cambiando mediante un scrip que hecho en js en el que le añado una funcion que va alternando el texto(añado la funcion en cuestion):
+  
+  "function cambiarTexto(){
+    texto++;
+    if (texto == 1){
+        document.querySelector("#textoCambiante").innerHTML = "Has pulsado el boton"
+  }
+  
+  if(texto == 2){
+    document.querySelector("#textoCambiante").innerHTML = "Has vuelto ha pulsar el boton!!!"
+  }
 
-Es importante que realizes primero la parte de teoría, aunque las partes de práctica y documentación se pueden realizar como quieras.
+  if (texto == 3){
+    document.querySelector("#textoAlternante").style.background = "black"
+    document.querySelector("#textoAlternante").style.color = "white"
+  }
 
-Cada directorio tiene instrucciones en su interior, léelas con atención, y si tienes alguna duda, preguntame!
+  if(texto == 4){
+    document.querySelector("#textoCambiante").innerHTML = "Pulsa el boton"
+    document.querySelector("#textoAlternante").style.background = "red"
+    document.querySelector("#textoAlternante").style.color = "black"
+    texto = 0
+  }
+console.log(texto)
+  
+}"
+
+
+Por ultimo en el css lo que hecho ha sido centrarle el texto y ha cada seccion, menos a la ultima, un fondo distinto para distinguirlo a los fondos que he puesto para las secciones en general, ademas a cada seccion le puesto un flex center que centra todas las cosas como puse anteriormente 
